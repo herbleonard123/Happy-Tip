@@ -32,7 +32,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fwN-mE-BE8">
-                                <rect key="frame" x="264" y="246" width="45" height="21"/>
+                                <rect key="frame" x="264" y="246" width="85" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c3H-Wf-9ly">
-                                <rect key="frame" x="264" y="187" width="45" height="21"/>
+                                <rect key="frame" x="264" y="187" width="95" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -73,8 +73,8 @@
                                     <segment title="25%"/>
                                 </segments>
                             </segmentedControl>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="XUd-8u-t7Q">
-                                <rect key="frame" x="227" y="107" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="XUd-8u-t7Q">
+                                <rect key="frame" x="238" y="107" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -93,7 +93,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tipster" id="Ybq-b1-HsV"/>
                     <connections>
-                        <outlet property="tipAmountLabel" destination="XUd-8u-t7Q" id="Jra-Qd-yWs"/>
+                        <outlet property="billAmounTtextField" destination="XUd-8u-t7Q" id="f2Q-Kx-Sst"/>
+                        <outlet property="tipAmountLabel" destination="c3H-Wf-9ly" id="KcL-s0-QE2"/>
+                        <outlet property="totalLabel" destination="fwN-mE-BE8" id="Yd3-0v-OaV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -64,15 +64,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.21467883912481356" green="1" blue="0.23712916874473933" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="b2x-kH-xmW">
-                                <rect key="frame" x="16" y="319" width="333" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="15%"/>
-                                    <segment title="20%"/>
-                                    <segment title="25%"/>
-                                </segments>
-                            </segmentedControl>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" id="XUd-8u-t7Q">
                                 <rect key="frame" x="238" y="107" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -83,6 +74,18 @@
                                     <action selector="Calculatetip:" destination="BYZ-38-t0r" eventType="editingChanged" id="GTn-zd-nmj"/>
                                 </connections>
                             </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="b2x-kH-xmW">
+                                <rect key="frame" x="53" y="319" width="333" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15%"/>
+                                    <segment title="20%"/>
+                                    <segment title="25%"/>
+                                </segments>
+                                <connections>
+                                    <action selector="Calculatetip:" destination="BYZ-38-t0r" eventType="valueChanged" id="mNk-hS-gO0"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.79315018291958417" green="1" blue="0.56780327265321318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -95,6 +98,7 @@
                     <connections>
                         <outlet property="billAmounTtextField" destination="XUd-8u-t7Q" id="f2Q-Kx-Sst"/>
                         <outlet property="tipAmountLabel" destination="c3H-Wf-9ly" id="KcL-s0-QE2"/>
+                        <outlet property="tipControl" destination="b2x-kH-xmW" id="EsU-8G-bfX"/>
                         <outlet property="totalLabel" destination="fwN-mE-BE8" id="Yd3-0v-OaV"/>
                     </connections>
                 </viewController>
